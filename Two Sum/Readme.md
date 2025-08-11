@@ -1,20 +1,19 @@
--
-- Brute Force :
--
-- Traverse the array
+- Brute Force:
+
+- cl the array
 - I have a target right
 - I have two loops
 - one is pointing starting pos
-- and another is pointng after one th pos
+- and another is pointng after one the pos
 - Every time first loop passes i want change second loop pos
 - and each second loop will be come
 - i want check the condition i + j == target
 - it will match target i want return the indices
 - the indices will be i and j values
 - if target does not matching anything return []
--
-- Optimal Solution :
--
+
+- Optimal Solution:
+
 - I have traverse the array
 - Each time we traverse the array we assign the value in map ds with keys
 - And another have to traverse the array
