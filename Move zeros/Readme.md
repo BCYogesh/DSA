@@ -51,19 +51,21 @@ let right=n-1;
 
 ##### Third method:
 
-## Code
+## Code :
 
 var moveZeroes = function(nums) {
 let snowBallSize = 0;
-for (let i=0;i<nums.length;i++){
-if (nums[i]==0){
-snowBallSize++;
-}
-else if (snowBallSize > 0) {
-let t = nums[i];
-nums[i]=0;
-nums[i-snowBallSize]=t;
-}
-}
-return nums;
+
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i]==0) {
+            snowBallSize++;
+        }
+        else if (snowBallSize > 0) {
+            let t = nums[i];
+            nums[i]=0;
+            nums[i-snowBallSize]=t;
+        }
+    }
+    return nums;
+
 };
